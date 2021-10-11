@@ -29,6 +29,7 @@ namespace CheckersGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.square1 = new System.Windows.Forms.Button();
             this.square2 = new System.Windows.Forms.Button();
             this.square4 = new System.Windows.Forms.Button();
@@ -98,6 +99,8 @@ namespace CheckersGame
             // square1
             // 
             this.square1.BackColor = System.Drawing.Color.Black;
+            this.square1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square1.BackgroundImage")));
+            this.square1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square1.Location = new System.Drawing.Point(58, 49);
             this.square1.Name = "square1";
             this.square1.Size = new System.Drawing.Size(75, 75);
@@ -108,6 +111,8 @@ namespace CheckersGame
             // square2
             // 
             this.square2.BackColor = System.Drawing.Color.Red;
+            this.square2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square2.BackgroundImage")));
+            this.square2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square2.Location = new System.Drawing.Point(131, 49);
             this.square2.Name = "square2";
             this.square2.Size = new System.Drawing.Size(75, 75);
