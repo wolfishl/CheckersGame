@@ -34,11 +34,14 @@ namespace CheckersGame
 
         }
 
-        private void ok_Click(object sender, EventArgs e) //Change everything to tryParse
+        //TODO: add rules for jumping over
+        private void ok_Click(object sender, EventArgs e) 
         {
-            if (int.Parse(rowComboBox.Text) == rowClicked + 1 || int.Parse(rowComboBox.Text) == rowClicked - 1)
+            int.TryParse(rowComboBox.Text, out int comboBoxRow);
+            int.TryParse(columnComboBox.Text, out int comboBoxColumn);
+            if (comboBoxRow == rowClicked + 1 || comboBoxRow == rowClicked - 1)
             {
-                if (int.Parse(columnComboBox.Text) == columnClicked + 1 || int.Parse(columnComboBox.Text) == columnClicked + 1)
+                if (comboBoxColumn == columnClicked + 1 || comboBoxColumn == columnClicked + 1)
                 {
                     errorMessage.Text = "";
                     validEntry = true;
