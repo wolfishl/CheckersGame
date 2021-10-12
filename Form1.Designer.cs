@@ -111,7 +111,6 @@ namespace CheckersGame
             // square2
             // 
             this.square2.BackColor = System.Drawing.Color.Red;
-            this.square2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square2.BackgroundImage")));
             this.square2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square2.Location = new System.Drawing.Point(131, 49);
             this.square2.Name = "square2";
@@ -133,6 +132,8 @@ namespace CheckersGame
             // square3
             // 
             this.square3.BackColor = System.Drawing.Color.Black;
+            this.square3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square3.BackgroundImage")));
+            this.square3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square3.Location = new System.Drawing.Point(204, 49);
             this.square3.Name = "square3";
             this.square3.Size = new System.Drawing.Size(75, 75);
@@ -153,6 +154,8 @@ namespace CheckersGame
             // square7
             // 
             this.square7.BackColor = System.Drawing.Color.Black;
+            this.square7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square7.BackgroundImage")));
+            this.square7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square7.Location = new System.Drawing.Point(495, 49);
             this.square7.Name = "square7";
             this.square7.Size = new System.Drawing.Size(75, 75);
@@ -173,6 +176,8 @@ namespace CheckersGame
             // square5
             // 
             this.square5.BackColor = System.Drawing.Color.Black;
+            this.square5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square5.BackgroundImage")));
+            this.square5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square5.Location = new System.Drawing.Point(349, 49);
             this.square5.Name = "square5";
             this.square5.Size = new System.Drawing.Size(75, 75);
@@ -193,6 +198,8 @@ namespace CheckersGame
             // square14
             // 
             this.square14.BackColor = System.Drawing.Color.Black;
+            this.square14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square14.BackgroundImage")));
+            this.square14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square14.Location = new System.Drawing.Point(422, 122);
             this.square14.Name = "square14";
             this.square14.Size = new System.Drawing.Size(75, 75);
@@ -213,6 +220,8 @@ namespace CheckersGame
             // square12
             // 
             this.square12.BackColor = System.Drawing.Color.Black;
+            this.square12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square12.BackgroundImage")));
+            this.square12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square12.Location = new System.Drawing.Point(276, 122);
             this.square12.Name = "square12";
             this.square12.Size = new System.Drawing.Size(75, 75);
@@ -233,6 +242,8 @@ namespace CheckersGame
             // square10
             // 
             this.square10.BackColor = System.Drawing.Color.Black;
+            this.square10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square10.BackgroundImage")));
+            this.square10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square10.Location = new System.Drawing.Point(131, 122);
             this.square10.Name = "square10";
             this.square10.Size = new System.Drawing.Size(75, 75);
@@ -253,6 +264,8 @@ namespace CheckersGame
             // square16
             // 
             this.square16.BackColor = System.Drawing.Color.Black;
+            this.square16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square16.BackgroundImage")));
+            this.square16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square16.Location = new System.Drawing.Point(568, 122);
             this.square16.Name = "square16";
             this.square16.Size = new System.Drawing.Size(75, 75);
@@ -353,6 +366,8 @@ namespace CheckersGame
             // square23
             // 
             this.square23.BackColor = System.Drawing.Color.Black;
+            this.square23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square23.BackgroundImage")));
+            this.square23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square23.Location = new System.Drawing.Point(495, 195);
             this.square23.Name = "square23";
             this.square23.Size = new System.Drawing.Size(75, 75);
@@ -373,6 +388,8 @@ namespace CheckersGame
             // square21
             // 
             this.square21.BackColor = System.Drawing.Color.Black;
+            this.square21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square21.BackgroundImage")));
+            this.square21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square21.Location = new System.Drawing.Point(349, 195);
             this.square21.Name = "square21";
             this.square21.Size = new System.Drawing.Size(75, 75);
@@ -393,6 +410,8 @@ namespace CheckersGame
             // square19
             // 
             this.square19.BackColor = System.Drawing.Color.Black;
+            this.square19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square19.BackgroundImage")));
+            this.square19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square19.Location = new System.Drawing.Point(204, 195);
             this.square19.Name = "square19";
             this.square19.Size = new System.Drawing.Size(75, 75);
@@ -413,6 +432,8 @@ namespace CheckersGame
             // square17
             // 
             this.square17.BackColor = System.Drawing.Color.Black;
+            this.square17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square17.BackgroundImage")));
+            this.square17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square17.Location = new System.Drawing.Point(58, 195);
             this.square17.Name = "square17";
             this.square17.Size = new System.Drawing.Size(75, 75);
@@ -433,6 +454,8 @@ namespace CheckersGame
             // square46
             // 
             this.square46.BackColor = System.Drawing.Color.Black;
+            this.square46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square46.BackgroundImage")));
+            this.square46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square46.Location = new System.Drawing.Point(422, 414);
             this.square46.Name = "square46";
             this.square46.Size = new System.Drawing.Size(75, 75);
@@ -453,6 +476,8 @@ namespace CheckersGame
             // square44
             // 
             this.square44.BackColor = System.Drawing.Color.Black;
+            this.square44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square44.BackgroundImage")));
+            this.square44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square44.Location = new System.Drawing.Point(276, 414);
             this.square44.Name = "square44";
             this.square44.Size = new System.Drawing.Size(75, 75);
@@ -473,6 +498,8 @@ namespace CheckersGame
             // square42
             // 
             this.square42.BackColor = System.Drawing.Color.Black;
+            this.square42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square42.BackgroundImage")));
+            this.square42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square42.Location = new System.Drawing.Point(131, 414);
             this.square42.Name = "square42";
             this.square42.Size = new System.Drawing.Size(75, 75);
@@ -493,6 +520,8 @@ namespace CheckersGame
             // square48
             // 
             this.square48.BackColor = System.Drawing.Color.Black;
+            this.square48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square48.BackgroundImage")));
+            this.square48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square48.Location = new System.Drawing.Point(568, 414);
             this.square48.Name = "square48";
             this.square48.Size = new System.Drawing.Size(75, 75);
@@ -593,6 +622,8 @@ namespace CheckersGame
             // square62
             // 
             this.square62.BackColor = System.Drawing.Color.Black;
+            this.square62.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square62.BackgroundImage")));
+            this.square62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square62.Location = new System.Drawing.Point(422, 559);
             this.square62.Name = "square62";
             this.square62.Size = new System.Drawing.Size(75, 75);
@@ -613,6 +644,8 @@ namespace CheckersGame
             // square60
             // 
             this.square60.BackColor = System.Drawing.Color.Black;
+            this.square60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square60.BackgroundImage")));
+            this.square60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square60.Location = new System.Drawing.Point(276, 559);
             this.square60.Name = "square60";
             this.square60.Size = new System.Drawing.Size(75, 75);
@@ -633,6 +666,8 @@ namespace CheckersGame
             // square58
             // 
             this.square58.BackColor = System.Drawing.Color.Black;
+            this.square58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square58.BackgroundImage")));
+            this.square58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square58.Location = new System.Drawing.Point(131, 559);
             this.square58.Name = "square58";
             this.square58.Size = new System.Drawing.Size(75, 75);
@@ -653,6 +688,8 @@ namespace CheckersGame
             // square64
             // 
             this.square64.BackColor = System.Drawing.Color.Black;
+            this.square64.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square64.BackgroundImage")));
+            this.square64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square64.Location = new System.Drawing.Point(568, 559);
             this.square64.Name = "square64";
             this.square64.Size = new System.Drawing.Size(75, 75);
@@ -673,6 +710,8 @@ namespace CheckersGame
             // square55
             // 
             this.square55.BackColor = System.Drawing.Color.Black;
+            this.square55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square55.BackgroundImage")));
+            this.square55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square55.Location = new System.Drawing.Point(495, 486);
             this.square55.Name = "square55";
             this.square55.Size = new System.Drawing.Size(75, 75);
@@ -693,6 +732,8 @@ namespace CheckersGame
             // square53
             // 
             this.square53.BackColor = System.Drawing.Color.Black;
+            this.square53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square53.BackgroundImage")));
+            this.square53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square53.Location = new System.Drawing.Point(349, 486);
             this.square53.Name = "square53";
             this.square53.Size = new System.Drawing.Size(75, 75);
@@ -713,6 +754,8 @@ namespace CheckersGame
             // square51
             // 
             this.square51.BackColor = System.Drawing.Color.Black;
+            this.square51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square51.BackgroundImage")));
+            this.square51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square51.Location = new System.Drawing.Point(204, 486);
             this.square51.Name = "square51";
             this.square51.Size = new System.Drawing.Size(75, 75);
@@ -733,6 +776,8 @@ namespace CheckersGame
             // square49
             // 
             this.square49.BackColor = System.Drawing.Color.Black;
+            this.square49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("square49.BackgroundImage")));
+            this.square49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.square49.Location = new System.Drawing.Point(58, 486);
             this.square49.Name = "square49";
             this.square49.Size = new System.Drawing.Size(75, 75);
