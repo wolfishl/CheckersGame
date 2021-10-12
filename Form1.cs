@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace CheckersGame
 {
@@ -36,31 +37,53 @@ namespace CheckersGame
         {
             Button btn = (Button)sender;
             var name = btn.Name;
-
-            MovePeice(sender);
-
-            for (int x = 0; x < boardSize; x++)
+            if (btn.BackgroundImage != null)
             {
-                for (int y = 0; y < boardSize; y++)
+                int x = 0;
+                int y = 0;
+                bool found = false;
+                for (x = 0; x < boardSize; x++)
                 {
-                    if (board[x, y].Name == name)
+                    for (y = 0; y < boardSize; y++)
                     {
-                        MessageBox.Show($"Location of button is [{x + 1},{y + 1}]");
-                        break;
+                        if (board[x, y].Name == name)
+                        {
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (found) break;
+                }
+
+                Form2 testDialog = new Form2(x + 1, y + 1);
+                testDialog.ShowDialog();
+                bool valid = false;
+                while(!valid)
+                {
+                    valid = testDialog.getValidEntry();
+                    if(valid)
+                    {
+                        int row = testDialog.getComboBoxRow() - 1;
+                        int column = testDialog.getComboBoxColumn() - 1;
+                        MovePiece(btn);
+                        MovePiece(board[row, column]);
+                        //testDialog.Close();
                     }
                 }
+             
+                
             }
+
+            
         }
 
 
-        public void MovePeice(object sender)
+        public void MovePiece(Button button)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Button button = (Button) sender;
             if (button.BackgroundImage != null)
             {
                 button.BackgroundImage = null;
-                System.Console.WriteLine("we got here");
             }
             else
             {

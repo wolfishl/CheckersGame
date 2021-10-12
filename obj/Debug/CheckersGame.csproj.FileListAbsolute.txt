@@ -28,3 +28,4 @@ C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\Checke
 C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.csproj.CoreCompileInputs.cache
 C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.exe
 C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.pdb
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.Form2.resources
