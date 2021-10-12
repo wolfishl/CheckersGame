@@ -37,6 +37,8 @@ namespace CheckersGame
             Button btn = (Button)sender;
             var name = btn.Name;
 
+            MovePeice(sender);
+
             for (int x = 0; x < boardSize; x++)
             {
                 for (int y = 0; y < boardSize; y++)
@@ -47,6 +49,30 @@ namespace CheckersGame
                         break;
                     }
                 }
+            }
+        }
+
+
+        public void MovePeice(object sender)
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Button button = (Button) sender;
+            if (button.BackgroundImage != null)
+            {
+                button.BackgroundImage = null;
+                System.Console.WriteLine("we got here");
+            }
+            else
+            {
+                if (button.BackColor == System.Drawing.Color.Red)
+                {
+                    button.BackgroundImage = (System.Drawing.Image)(resources.GetObject("square2.BackgroundImage"));
+                }
+                else
+                {
+                    button.BackgroundImage = (System.Drawing.Image)(resources.GetObject("square1.BackgroundImage"));
+                }
+                button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             }
         }
 

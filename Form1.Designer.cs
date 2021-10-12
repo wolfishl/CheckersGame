@@ -744,7 +744,7 @@ namespace CheckersGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 616);
+            this.ClientSize = new System.Drawing.Size(715, 694);
             this.Controls.Add(this.square63);
             this.Controls.Add(this.square62);
             this.Controls.Add(this.square61);
