@@ -18,3 +18,14 @@ C:\Users\elian\source\repos\CheckersGame\obj\Debug\CheckersGame.csproj.GenerateR
 C:\Users\elian\source\repos\CheckersGame\obj\Debug\CheckersGame.csproj.CoreCompileInputs.cache
 C:\Users\elian\source\repos\CheckersGame\obj\Debug\CheckersGame.exe
 C:\Users\elian\source\repos\CheckersGame\obj\Debug\CheckersGame.pdb
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\bin\Debug\CheckersGame.exe.config
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\bin\Debug\CheckersGame.exe
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\bin\Debug\CheckersGame.pdb
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.csprojAssemblyReference.cache
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.Form1.resources
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.Properties.Resources.resources
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.csproj.GenerateResource.cache
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.csproj.CoreCompileInputs.cache
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.exe
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.pdb
+C:\Users\lwolf\Documents\Touro\Fall 2021\Practicum\CheckersGame\obj\Debug\CheckersGame.Form2.resources
