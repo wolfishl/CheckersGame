@@ -14,7 +14,7 @@ namespace CheckersGame
 {
     public partial class Form1 : Form
     {
-
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         Button[,] board;
         int boardSize = 8;
 
@@ -36,6 +36,7 @@ namespace CheckersGame
         public void DisplayButtonLocation(object sender)
         {
             Button btn = (Button)sender;
+            bool blackTeam = btn.BackgroundImage == (System.Drawing.Image)(resources.GetObject("square2.BackgroundImage"))? true : false;
             var name = btn.Name;
             if (btn.BackgroundImage != null)
             {
@@ -65,8 +66,8 @@ namespace CheckersGame
                     {
                         int row = testDialog.getComboBoxRow() - 1;
                         int column = testDialog.getComboBoxColumn() - 1;
-                        MovePiece(btn);
-                        MovePiece(board[row, column]);
+                        MovePiece(btn, blackTeam);
+                        MovePiece(board[row, column], blackTeam);
                         //testDialog.Close();
                     }
                 }
@@ -78,16 +79,15 @@ namespace CheckersGame
         }
 
 
-        public void MovePiece(Button button)
+        public void MovePiece(Button button, bool blackTeam)
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             if (button.BackgroundImage != null)
             {
                 button.BackgroundImage = null;
             }
             else
             {
-                if (button.BackColor == System.Drawing.Color.Red)
+                if (blackTeam)
                 {
                     button.BackgroundImage = (System.Drawing.Image)(resources.GetObject("square2.BackgroundImage"));
                 }

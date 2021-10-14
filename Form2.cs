@@ -34,15 +34,18 @@ namespace CheckersGame
 
         }
 
-        //TODO: add rules for jumping over
+        //TODO: add rules if it's a queen?
+        //add rules for jumping over
+        //add code to check that no piece is there
         private void ok_Click(object sender, EventArgs e) 
         {
             int.TryParse(rowComboBox.Text, out int comboBoxRow);
             int.TryParse(columnComboBox.Text, out int comboBoxColumn);
-            if (comboBoxRow == rowClicked + 1 || comboBoxRow == rowClicked - 1)
+            if (comboBoxRow == rowClicked + 1)
             {
-                if (comboBoxColumn == columnClicked + 1 || comboBoxColumn == columnClicked + 1)
+                if (comboBoxColumn == columnClicked + 1 || comboBoxColumn == columnClicked - 1)
                 {
+                    //check that no piece there
                     errorMessage.Text = "";
                     validEntry = true;
                     this.Close();
@@ -52,10 +55,30 @@ namespace CheckersGame
                     errorMessage.Text = "Invalid move";
                 }
             }
+            //if queen
+            if (comboBoxRow == rowClicked -1)
+            {
+                //add code to determine if queen
+                //also add code to jump over backwards
+            }
+            if (comboBoxRow == rowClicked + 2)
+            {
+                if (comboBoxColumn == columnClicked + 2 || comboBoxColumn == columnClicked - 2)
+                {
+                    //check if there's a piece from the other team there
+
+                    errorMessage.Text = "Not yet supported";
+                    //validEntry = true;
+                    //this.Close();
+                }
+                else
+                {
+                    errorMessage.Text = "Invalid move";
+                }
+            }
             else
             {
-               errorMessage.Text = "Invalid move";
-               
+                errorMessage.Text = "Invalid move";
             }
         }
 
