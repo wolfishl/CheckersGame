@@ -15,13 +15,15 @@ namespace CheckersGame
         int rowClicked;
         int columnClicked;
         bool validEntry = false;
-        public Form2(int row, int column)
+        Button[,] board;
+        public Form2(int row, int column, Button[,] board)
         {
             InitializeComponent();
             rowClicked = row;
             columnClicked = column;
             currentRow.Text = "Current Row: " + row;
             currentColumn.Text = "Current Column: " + column;
+            this.board = board;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -34,54 +36,93 @@ namespace CheckersGame
 
         }
 
-        //TODO: add rules if it's a queen?
-        //add rules for jumping over
-        //add code to check that no piece is there
-        private void ok_Click(object sender, EventArgs e) 
+        //TODO: 
+        //add conditions for jumping over
+        //add code to determine the color of a piece
+        //add code to determine if the piece is a king
+        //add code to support double jumps
+        private void ok_Click(object sender, EventArgs e)
         {
             int.TryParse(rowComboBox.Text, out int comboBoxRow);
             int.TryParse(columnComboBox.Text, out int comboBoxColumn);
-            if (comboBoxRow == rowClicked + 1)
+            bool grayPiece = true; //figure this out
+            bool king = false; //figure this out
+            //regular jump
+            if ((grayPiece && comboBoxRow == rowClicked + 1) || //gray piece
+            (!grayPiece && comboBoxRow == rowClicked - 1) || //white piece
+            (king && comboBoxRow == rowClicked + 1 || //white king
+            king && comboBoxRow == rowClicked - 1)) //gray king
             {
                 if (comboBoxColumn == columnClicked + 1 || comboBoxColumn == columnClicked - 1)
                 {
-                    //check that no piece there
-                    errorMessage.Text = "";
+                    if (board[--comboBoxRow, --comboBoxColumn].BackgroundImage == null)
+                    {
+                        errorMessage.Text = "";
+                        validEntry = true;
+                        this.Close();
+                    }
+                    else
+                    {
+                        errorMessage.Text = "Invalid move \n There is a piece in that position";
+                    }
+                }
+                else
+                {
+                    errorMessage.Text = "Invalid move";
+                }
+            }
+            //capturing a piece moving forward
+            else if ((grayPiece && comboBoxRow == rowClicked + 2) || //gray piece
+                 (king && comboBoxRow == rowClicked + 2)) //white king
+            {
+                Button middleSquare = (comboBoxColumn == columnClicked + 2) ? board[comboBoxRow, comboBoxColumn] :
+                    (comboBoxColumn == columnClicked - 2) ? board[comboBoxRow, comboBoxColumn - 2] : null;
+
+                if (middleSquare.BackgroundImage == null)
+                {
+                    errorMessage.Text = "Invalid move";
+                }
+                //else if ()//check if piece is from the same team
+                //{
+                //    errorMessage.Text = "Invalid move";
+                //}
+                else
+                {
+                    //add support to remove the piece that is being captured
                     validEntry = true;
                     this.Close();
                 }
-                else
-                {
-                    errorMessage.Text = "Invalid move";
-                }
             }
-            //if queen
-            if (comboBoxRow == rowClicked -1)
+            //capturing a piece moving backwards
+            else if ((!grayPiece && comboBoxRow == rowClicked - 2) || //white piece
+            (king && comboBoxRow == rowClicked - 2)) //gray king
             {
-                //add code to determine if queen
-                //also add code to jump over backwards
-            }
-            if (comboBoxRow == rowClicked + 2)
-            {
-                if (comboBoxColumn == columnClicked + 2 || comboBoxColumn == columnClicked - 2)
-                {
-                    //check if there's a piece from the other team there
+                Button middleSquare = (comboBoxColumn == columnClicked + 2) ? board[comboBoxRow -2, comboBoxColumn] :
+                    (comboBoxColumn == columnClicked - 2) ? board[comboBoxRow -2, comboBoxColumn - 2] : null;
 
-                    errorMessage.Text = "Not yet supported";
-                    //validEntry = true;
-                    //this.Close();
-                }
-                else
+                if (middleSquare.BackgroundImage == null)
                 {
                     errorMessage.Text = "Invalid move";
                 }
+                //else if ()//check if piece is from the same team
+                //{
+                //    errorMessage.Text = "Invalid move";
+                //}
+                else
+                {
+                    //add support to remove the piece that is being captured
+                    validEntry = true;
+                    this.Close();
+                }
             }
+
             else
-            {
-                errorMessage.Text = "Invalid move";
-            }
-        }
+                {
+                    errorMessage.Text = "Invalid move";
+                }
 
+            }          
+  
         public int getComboBoxRow()
         {
             return int.Parse(rowComboBox.Text);
@@ -97,6 +138,7 @@ namespace CheckersGame
             return validEntry;
         }
 
+        //there's something wrong with this function
         private void cancel_Click(object sender, EventArgs e)
         {
             this.Close();
