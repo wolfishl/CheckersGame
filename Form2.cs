@@ -63,7 +63,7 @@ namespace CheckersGame
                     }
                     else
                     {
-                        errorMessage.Text = "Invalid move \n There is a piece in that position";
+                        errorMessage.Text = "Invalid move";
                     }
                 }
                 else
